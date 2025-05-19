@@ -15,12 +15,21 @@ body {
     background-color: #222222;
     color: white;
     margin: auto;
+    
       
 }
 
 main {
     display: flex;
-    flex-direction: column;   
+    flex-direction: column;
+    max-width: 1440px;
+    align-items: center;
+    margin: auto;
+}
+
+section {
+  width: 100%;
+  box-sizing: border-box;
 }
 
 
@@ -35,10 +44,11 @@ span {
   background-color: #222222;
   position: fixed;
   width: 100%;
-  display: flex;             /* Adiciona flex aqui */
-  justify-content: center;   /* Centraliza horizontalmente */
-  align-items: center;       /* Centraliza verticalmente */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 
 nav .menu {
   display: flex;
@@ -46,7 +56,9 @@ nav .menu {
   list-style: none;
   gap: 80px;
   padding: 0;
-  margin: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 nav li a {
@@ -83,9 +95,9 @@ nav li a:hover::after {
 
 .container {
     display: flex;
-    gap: 110px;
+    gap: 80px;
     align-items: center;
-    max-width: 1200px;
+    max-width: 1300px;
     min-height: 100vh;
     padding-top: 10px;
     margin: auto;
@@ -96,13 +108,14 @@ nav li a:hover::after {
   box-shadow: -10px 10px 10px  #8773fb85;
   border-radius: 50%; 
   object-fit: cover; 
-  width: 600px;
-  height: 600px;
+  width: 550px;
+  height: 550px;
     
 }
   
 .container .texto {
-  max-width: 700px;
+  max-width: 600px;
+
 }
   
 .container h1 {
@@ -137,13 +150,23 @@ nav li a:hover::after {
 
 #projetos {
   margin-top: 100px;
+  max-width: 1440px;
+}
+
+.titulo {
+  width: 100%;
+  max-width: 1440px;
+  margin: 100px auto 0 auto;
+  padding-left: 40px;
+  box-sizing: border-box;
 }
 
 .titulo h2 {
-  font-size: 24px;
-  padding: 40px;
-  margin-left: 80px;
-  margin-top: 100px;
+  font-size: 32px;
+  line-height: 1.2;
+  text-align: left;
+  margin: 0;
+  padding: 0;
 }
 
 #projetos .caixa {
@@ -176,25 +199,6 @@ nav li a:hover::after {
 
 #habilidades {
  margin-top: 100px;
-}
-
-.circulos {
-  width: 90%;
-  display: flex;
-  justify-content: center; /* Centraliza os círculos horizontalmente */
-  flex-wrap: wrap;         /* Permite quebra de linha se não couberem */
-  margin: 0 auto;          /* Centraliza o contêiner se necessário */
-  text-align: left;
-}
-
-.circulo {
-  width: 200px;
-  height: 200px; /* Mesma altura que a largura */
-  background-color: #8773FB;
-  border-radius: 50%;
-  display: inline-block;
-  margin: 20px;
-  
 }
 
 #contato {
