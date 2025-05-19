@@ -3,6 +3,7 @@
 * {
     margin: 0px;
     padding: 0px;
+
 }
 
 html {
@@ -12,7 +13,9 @@ html {
 body { 
     font-family: "Inter", sans-serif;
     background-color: #222222;
-    color: white;   
+    color: white;
+    margin: auto;
+      
 }
 
 main {
@@ -84,12 +87,17 @@ nav li a:hover::after {
     align-items: center;
     max-width: 1200px;
     min-height: 100vh;
-    padding-top: 10px; 
+    padding-top: 10px;
+    margin: auto;
 }
   
 .container #perfil {
   border-radius: 2px;
   box-shadow: -10px 10px 10px  #8773fb85;
+  border-radius: 50%; 
+  object-fit: cover; 
+  width: 600px;
+  height: 600px;
     
 }
   
