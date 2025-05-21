@@ -146,7 +146,6 @@ nav li a:hover::after {
   display: flex;
   gap: 25px;
   margin-top: 30px;
-  
 }
 
 .icons img {
@@ -180,17 +179,18 @@ nav li a:hover::after {
 
 #projetos .caixa {
   display: flex;
-  width: 100%;
+  width: 1366px;
   background-color: #222222;
   border: 1px solid #6666665d;
   border-radius: 5px;
   margin: auto;
-  margin-top: 50px;
+  margin-top: 100px;
   
 }
 
 .caixa {
   display: flex;
+  
 }
 
 .img_caixa {
@@ -213,9 +213,8 @@ nav li a:hover::after {
 }
 
 .caixa:hover .img_caixa img {
-  transform: scale(1.05) rotate(-2deg);
+  transform: scale(1.1) rotate(-1deg);
 }
-
 
 
 .texto_caixa {
@@ -230,7 +229,6 @@ nav li a:hover::after {
 
 .texto_caixa p {
   padding: 30px;
-
 }
 
 #habilidades {
@@ -258,8 +256,40 @@ nav li a:hover::after {
   z-index: 9999;
 }
 
+/*MONITORES*/
+ @media (min-width: 1920px) {
+
+  main {
+    max-width: 80%;
+  }
+
+  .container #perfil {
+    border-radius: 2px;
+    box-shadow: -10px 10px 10px  #8773fb85;
+    border-radius: 50%; 
+    object-fit: cover; 
+    width: 600px;
+    height: 600px; 
+  }
+
+  .container {
+    display: flex;
+    gap: 80px;
+    align-items: center;
+    max-width: 80%;
+    min-height: 100vh;
+    padding-top: 10px;
+    margin: auto;
+}
+  #projetos .caixa { 
+    width: 1366px;
+}
+
+  
+ }
+
 /*NOTEBOOKS*/
-@media (max-width: 1920px) {
+@media (max-width: 1366px) {
  
   body {
   overflow-x: hidden;
@@ -347,6 +377,23 @@ nav li a:hover::after {
 
 }
 
+}
+
+/*CELULARES*/
+@media (min-width: 360px) and (max-width: 480px){
+  
+  header{
+    display: none;
+  }
+
+  .container #perfil {
+    border-radius: 2px;
+    box-shadow: -10px 10px 10px  #8773fb85;
+    border-radius: 50%; 
+    object-fit: cover; 
+    width: 100px;
+    height: 100px; 
+  }
 
   
 }
