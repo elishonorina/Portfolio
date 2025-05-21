@@ -380,21 +380,67 @@ nav li a:hover::after {
 }
 
 /*CELULARES*/
-@media (min-width: 360px) and (max-width: 480px){
+@media (min-width: 300px) and (max-width: 480px){
   
-  header{
+  body {
+    width: 100%;
+  }
+  .cabecalho {
     display: none;
   }
-
-  .container #perfil {
-    border-radius: 2px;
-    box-shadow: -10px 10px 10px  #8773fb85;
-    border-radius: 50%; 
-    object-fit: cover; 
-    width: 100px;
-    height: 100px; 
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    flex-direction: column-reverse;
   }
 
-  
+  /* Força o h1 para o topo da .texto */
+  .texto {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .texto h1 {
+    order: -1; /* Faz o título aparecer antes de tudo */
+    text-align: left;
+    margin-bottom: 20px;
+  }
+
+  /* Agrupa visualmente a imagem e os ícones */
+  .imagem-icons-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+
+  #perfil {
+    width: 120px;
+    height: auto;
+    flex-shrink: 0;
+  }
+
+  .icons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .icons img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .texto p {
+    order: 1; /* Garante que o parágrafo apareça depois de tudo */
+    text-align: justify;
+  }
 }
+
   
