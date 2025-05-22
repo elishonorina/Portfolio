@@ -158,7 +158,7 @@ nav li a:hover::after {
 
 #projetos {
   margin-top: 100px;
-  max-width: 1440px;
+  max-width: 100%;
 }
 
 .titulo {
@@ -177,6 +177,48 @@ nav li a:hover::after {
   padding: 0;
 }
 
+.caixa-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  padding-top: 100px;
+}
+
+.caixinha {
+  width: 180px;
+  height: 200px;
+  border-radius: 5px;
+  border-color: #ffffff;
+  box-shadow: 0px 2px 6px 5px rgba(0, 0, 0, 0.13);
+  transition: transform 0.2s ease-in-out;
+  margin-left: 15px;
+  display: flex;
+  flex-direction: column; /* empilha imagem + texto */
+  align-items: center;
+}
+.caixinha:hover {
+  transform: scale(1.05);
+  color: #8773FB;
+}
+.caixinha img {
+  width: 180px;
+  height: 110px;
+  height: auto;
+  border-radius: 5px 5px 0px 0px;
+}
+
+.caixinha p {
+   display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: calc(200px - 110px); /* altura total da caixinha - altura da imagem */
+  margin: 0;
+  font-size: 16px;
+  padding: 10px;
+}
+/*
 #projetos .caixa {
   display: flex;
   width: 1366px;
@@ -229,7 +271,7 @@ nav li a:hover::after {
 
 .texto_caixa p {
   padding: 30px;
-}
+} */
 
 #habilidades {
  margin-top: 100px;
@@ -256,41 +298,159 @@ nav li a:hover::after {
   z-index: 9999;
 }
 
-/*MONITORES*/
- @media (min-width: 1920px) {
 
-  main {
-    max-width: 80%;
+/*CELULARES*/
+@media (max-width: 599px){
+  
+  body {
+    width: 100%;
+  }
+  .cabecalho {
+    display: none;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    flex-direction: column-reverse;
   }
 
-  .container #perfil {
-    border-radius: 2px;
-    box-shadow: -10px 10px 10px  #8773fb85;
-    border-radius: 50%; 
-    object-fit: cover; 
-    width: 600px;
-    height: 600px; 
+  .texto {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .texto h1 {
+    order: -1;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+
+  .imagem-icons-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+
+  #perfil {
+    width: 120px;
+    height: auto;
+    flex-shrink: 0;
+  }
+
+  .icons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .icons img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .texto p {
+    order: 1; 
+    text-align: justify;
+  }
+}
+
+
+/* TABLET RETRATO*/
+@media (min-width: 600px) and (max-width: 767px) {
+  #cursor {
+    display: none;
+  }
+
+  main{
+  max-width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: center; /* centraliza horizontalmente */
+  align-items: center;
+  flex-wrap: wrap;            /* permite quebra de linha */
+  overflow-x: hidden;         /* impede rolagem lateral */
+  box-sizing: border-box;
   }
 
   .container {
-    display: flex;
-    gap: 80px;
-    align-items: center;
-    max-width: 80%;
-    min-height: 100vh;
-    padding-top: 10px;
+    max-width: 90%;
+    gap: 30px;
     margin: auto;
-}
-  #projetos .caixa { 
-    width: 1366px;
+  }
+
+  .texto {
+    margin-top: 30px;
+  }
+
+  .texto h1 {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+
+  .texto p {
+    font-size: 12px;
+    
+  }
+
+  .container p {
+    margin-bottom: 15px; 
+  }
+
+  .container #perfil {
+    width: 300px;
+    height: 300px;
+  }
+  nav .menu {
+  gap: 40px;
+  }
+
+  .icons img {
+  width: 20px;
+  height: 20px;
+  }
+
+  .icons {
+    margin-top: 10px;
+    gap: 15px;
+  }
 }
 
+
+/* TABLET PAISAGEM/DESKTOP PEQUENO*/
+@media (min-width: 768px) and (max-width: 1024px) {
+  #cursor {
+    display: none;
+  }
   
- }
+  main {
+  max-width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: center; /* centraliza horizontalmente */
+  align-items: center;
+  flex-wrap: wrap;            /* permite quebra de linha */
+  overflow-x: hidden;         /* impede rolagem lateral */
+  box-sizing: border-box;
+  }     /* centraliza verticalmente se houver altura */
 
-/*NOTEBOOKS*/
-@media (max-width: 1366px) {
- 
+
+  .container #perfil {
+  width: 300px;
+  height: 300px;
+    
+}
+}
+
+/* NOTEBOOK */
+@media (min-width: 1025px) and (max-width: 1439px) {
+  
   body {
   overflow-x: hidden;
   }
@@ -376,71 +536,35 @@ nav li a:hover::after {
   font-size: 14px;
 
 }
-
 }
 
-/*CELULARES*/
-@media (min-width: 300px) and (max-width: 480px){
+/* Monitores grandes*/
+@media (min-width: 1440px) {
   
-  body {
-    width: 100%;
+  main {
+    max-width: 80%;
   }
-  .cabecalho {
-    display: none;
+
+  .container #perfil {
+    border-radius: 2px;
+    box-shadow: -10px 10px 10px  #8773fb85;
+    border-radius: 50%; 
+    object-fit: cover; 
+    width: 600px;
+    height: 600px; 
   }
+
   .container {
     display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding: 20px;
-    flex-direction: column-reverse;
-  }
-
-  /* Força o h1 para o topo da .texto */
-  .texto {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .texto h1 {
-    order: -1; /* Faz o título aparecer antes de tudo */
-    text-align: left;
-    margin-bottom: 20px;
-  }
-
-  /* Agrupa visualmente a imagem e os ícones */
-  .imagem-icons-wrapper {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    align-items: flex-start;
-    margin-bottom: 20px;
-  }
-
-  #perfil {
-    width: 120px;
-    height: auto;
-    flex-shrink: 0;
-  }
-
-  .icons {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-
-  .icons img {
-    width: 24px;
-    height: 24px;
-  }
-
-  .texto p {
-    order: 1; /* Garante que o parágrafo apareça depois de tudo */
-    text-align: justify;
-  }
+    gap: 80px;
+    align-items: center;
+    max-width: 80%;
+    min-height: 100vh;
+    padding-top: 10px;
+    margin: auto;
+}
+  #projetos .caixa { 
+    width: 1366px;
 }
 
-  
+}
