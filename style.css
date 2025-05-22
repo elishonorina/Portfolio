@@ -188,9 +188,8 @@ nav li a:hover::after {
 .caixinha {
   width: 180px;
   height: 200px;
-  border-radius: 5px;
-  border-color: #ffffff;
-  box-shadow: 0px 2px 6px 5px rgba(0, 0, 0, 0.13);
+  border-radius: 10px;
+  border: 2px solid #8773fb10;
   transition: transform 0.2s ease-in-out;
   margin-left: 15px;
   display: flex;
@@ -200,6 +199,7 @@ nav li a:hover::after {
 .caixinha:hover {
   transform: scale(1.05);
   color: #8773FB;
+  box-shadow: 2px 3px 6px 5px #8773fb13;
 }
 .caixinha img {
   width: 180px;
@@ -275,6 +275,64 @@ nav li a:hover::after {
 
 #habilidades {
  margin-top: 100px;
+}
+
+.caixas_habilidades {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 35px;
+  padding-top: 100px;
+}
+
+.caixa_habilidades {
+  display: flex; /* agora em linha */
+  flex-direction: row; /* imagem à esquerda, texto à direita */
+  align-items: center;
+  gap: 15px;
+  border: 2px solid #8773FB;
+  border-radius: 5px;
+  width: 250px;
+  height: 60px;
+  transition: transform 0.4s ease-in-out;
+  position: relative;
+  padding: 10px;
+}
+
+.caixa_habilidades img {
+  width: 60px;
+}
+
+.texto_habilidades {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.caixa_habilidades h1 {
+  font-size: 18px;
+  margin: 0;
+  color: white;
+}
+
+.oculto {
+  font-size: 14px;
+  color: #8773FB;
+  margin: 0;
+  display: none;
+}
+
+/* EXIBIR O TEXTO QUANDO PASSAR O MOUSE */
+.caixa_habilidades:hover .oculto {
+  display: block;
+  
+}
+
+/* efeito hover geral */
+.caixa_habilidades:hover {
+  transform: scale(1.05);
+  box-shadow: 2px 3px 6px 5px #8773fb13;
+
 }
 
 #contato {
