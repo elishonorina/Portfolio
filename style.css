@@ -292,7 +292,7 @@ nav li a:hover::after {
   gap: 15px;
   border: 2px solid #8773FB;
   border-radius: 5px;
-  width: 250px;
+  width: 200px;
   height: 60px;
   transition: transform 0.4s ease-in-out;
   position: relative;
@@ -300,7 +300,11 @@ nav li a:hover::after {
 }
 
 .caixa_habilidades img {
-  width: 60px;
+  width: 55px;
+}
+
+#hardware {
+  width: 50px;
 }
 
 .texto_habilidades {
