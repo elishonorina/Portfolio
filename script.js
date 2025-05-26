@@ -3,11 +3,14 @@ const observer = new IntersectionObserver((entries) => {
     if (entry.isIntersecting) {
       entry.target.classList.add('ativo');
     } else {
-      entry.target.classList.remove('ativo'); // se quiser que suma ao sair
+      entry.target.classList.remove('ativo'); // só se quiser que suma ao sair
     }
   });
 });
 
 const texto = document.querySelector('.texto');
-texto.classList.add('animar');
+texto.classList.add('animar'); // só o texto usa essa
 observer.observe(texto);
+
+const perfil = document.querySelector('#perfil');
+observer.observe(perfil);
