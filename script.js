@@ -9,8 +9,8 @@ const observer = new IntersectionObserver((entries) => {
 });
 
 const texto = document.querySelector('.texto');
-texto.classList.add('animar'); // só o texto usa essa
 observer.observe(texto);
-
 const perfil = document.querySelector('#perfil');
 observer.observe(perfil);
+const elementos = document.querySelectorAll('.caixa, .caixao');
+elementos.forEach(el => observer.observe(el));

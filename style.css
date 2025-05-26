@@ -38,7 +38,7 @@ span {
 /*CONFIGURAÇÕES DO HEADER*/
 .cabecalho {
   height: 60px;
-  background-color: #0d0c1600; /* fundo semi-transparente */
+  background-color: #0d0c16b7; /* fundo semi-transparente */
   backdrop-filter: blur(8px);
   gap: 200px;
   position: fixed;
@@ -129,8 +129,8 @@ nav li a:hover::after {
   border: 4px solid #8773FB;
   box-shadow: 0px 0px 20px  #8773fb85;
   border-radius: 50%; 
-  width: 300px;
-  height: 300px;
+  width: 350px;
+  height: 350px;
   animation: respirar 3s ease-in-out infinite;
   opacity: 0;
   transform: translateX(50px);
@@ -148,7 +148,7 @@ nav li a:hover::after {
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-8px); 
+    transform: translateY(-15px); 
   }
 }
 
@@ -157,14 +157,16 @@ nav li a:hover::after {
   max-width: 450px;
   text-align: left;
   opacity: 0;
-  transform: translateX(-50px);
-  transition: transform 1.2s ease-out, opacity 1.2s ease-out;
+  transform: translateY(50px);
+  transition: transform 1s ease-out, opacity 0.6s ease-out;
 }
 
 .texto.ativo {
   opacity: 1;
-  transform: translateX(0);
+  transform: translateY(0);
 }
+
+
   
 .container h1 {
   font-size: 40px;
@@ -241,6 +243,124 @@ nav li a:hover::after {
   transform: translateY(-4px);
 
 }
+
+/*SEÇÃO SOBRE MIM*/
+#sobre_mim {
+  height: 100vh;
+  max-width: 95%;
+  width: 100%;
+  padding: 0 40px;
+  justify-content: flex-start; 
+}
+
+.titulos_secoes {
+  margin-top: 65px;
+  font-size: 20px;
+  margin-bottom: 50px;
+  max-width: 900px;
+  text-align: left;
+  align-items: flex-start;
+  text-decoration-line: underline;
+  text-decoration-thickness: 5px;
+  text-underline-offset: 15px;
+  text-decoration-color: #8773FB;
+}
+
+.caixas {
+  display: flex;
+  justify-content: center;    /* alinha no eixo X (horizontal) */
+  align-items: center;        /* alinha no eixo Y (vertical) */
+  gap: 30px;
+}
+
+.caixa {
+  border-top: 4px solid #8773FB;
+  border-radius: 10px;
+  background-color: #201e369c;
+  height:230px;
+  width: 350px;
+  text-align: left;
+  transition: transform 0.5s ease-in-out;
+}
+  
+.caixa:hover{
+  transform: translateY(-10px);
+}
+
+.texto_caixa {
+  margin: auto;
+  text-align: left;
+  max-width: 80%;
+}
+
+.texto_caixa h2{
+  font-size: 20px;
+  color: #8773FB;
+  padding: 20px 0px;
+}
+
+.texto_caixa p {
+  font-size: 14px;
+}
+
+.caixao {
+  width: 100%;
+  height: 200px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #201e369c;
+  border-radius: 10px;
+}
+
+.subtitulo {
+  width: 100%;
+  text-align: center;
+  margin: 20px;
+  
+}
+
+.caixinhas_habilidade {
+  margin-top: 20px;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+.caixinha_habilidade {
+  border-radius: 5px;
+  background-color: #0d0c16;
+  width: 55px;
+  height: 50;
+  flex-direction: column;  /* empilha imagem + texto verticalmente */
+  align-items: center;     /* centraliza horizontalmente */
+  justify-content: center; /* centraliza verticalmente, se quiser */
+  text-align: center;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 10px;
+}
+
+.caixinha_habilidade img {
+  width: 30px;
+  margin-bottom: 10px;
+}
+
+.caixa,
+.caixao {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: transform 0.8s ease-out, opacity 0.6s ease-out;
+}
+
+/* Quando ativar, anima para posição normal */
+.caixa.ativo,
+.caixao.ativo {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 
 
 /*CELULARES*/
