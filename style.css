@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body { 
+    font-family: "Inter", sans-serif;
+    background-color: #222222;
+    color: white;
+    margin: auto;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    
+}
+
+section {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+
+span { 
+    color: #8773FB;
+    font-weight: 800;
+    letter-spacing: 3px;
+}
+
+/*CELULARES*/
+@media (max-width: 599px){
+}
+
+/* TABLET RETRATO*/
+@media (min-width: 600px) and (max-width: 767px) {
+}
+
+/* TABLET PAISAGEM/DESKTOP PEQUENO*/
+@media (min-width: 768px) and (max-width: 1024px) {
+}
+
+/* NOTEBOOK */
+@media (min-width: 1025px) and (max-width: 1439px) {
+}
+
+/* Monitores grandes*/
+@media (min-width: 1440px) {
+}
