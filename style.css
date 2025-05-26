@@ -188,10 +188,20 @@ nav li a:hover::after {
 }
 
 #curriculo {
-  background-color: #8773FB; 
+  background-color: #8773FB;
+  transition: transform 0.2s ease-in-out;
+}
+
+#curriculo:hover {
+  transform: scale(1.1);
+}
+
+#meu_contato:hover {
+  transform: scale(1.1);
 }
 
 #meu_contato {
+  transition: transform 0.2s ease-in-out;
   color: #8773FB;
   background-color: #0d0c16;
   border: 2px solid #8773FB;
