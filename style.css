@@ -24,11 +24,6 @@ main {
     margin: auto;
 }
 
-section {
-  height: 100vh;
-  box-sizing: border-box;
-}
-
 
 span { 
     color: #8773FB;
@@ -117,6 +112,9 @@ nav li a:hover::after {
 }
 
 /*SEÇÃO INICIAL*/
+#apresentacao {
+  height: 100vh;
+}
 .container {
     display: flex;
     gap: 80px;
@@ -260,7 +258,6 @@ nav li a:hover::after {
 
 /*SEÇÃO SOBRE MIM*/
 #sobre_mim {
-  height: 100vh;
   max-width: 95%;
   width: 100%;
   padding: 0 40px;
@@ -381,7 +378,6 @@ nav li a:hover::after {
 
 /*SEÇÃO PROJETOS*/
   #projetos {
-  min-height: 100vh;
   padding: 0 40px;
   width: 95%;
   box-sizing: border-box;
@@ -446,6 +442,66 @@ nav li a:hover::after {
   object-fit: cover;
   border-radius: 10px 10px 0px 0px;
 }
+
+/*SEÇÃO CONTATO*/
+#contato {
+  max-width: 95%;
+  width: 100%;
+  padding: 0 40px;
+  justify-content: flex-start; 
+}
+
+#contato h1 {
+  margin-top: 200px;
+}
+
+.conteudo_contato {
+  display: flex;
+  width: 95%;
+  gap: 100px;
+  
+}
+
+.conteudo_contato p {
+  font-size: 14px;
+  max-width: 40%;
+  text-align: left;
+}
+
+.caixa_contato {
+  border-radius: 5px;
+  background-color: #201e369c;
+  width: 550px;
+  height: 400px;
+}
+
+.nome, .email, .mensagem {
+  border-radius: 2px;
+  margin: 30px 50px;
+  background-color: #cccccc6c;
+  height: 60px;
+}
+#button {
+  width: 40%;
+  text-align: center;
+  background-color: #8773FB;
+}
+.nome {
+  margin-top: 60px;
+}
+
+.mensagem {
+  height: 150px;
+}
+
+
+
+
+
+
+
+
+
 
 /*CELULARES*/
 @media (max-width: 599px){
