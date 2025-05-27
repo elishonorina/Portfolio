@@ -332,7 +332,7 @@ nav li a:hover::after {
 .caixinha_habilidade {
   border-radius: 5px;
   background-color: #0d0c16;
-  width: 55px;
+  width: 75px;
   height: 50;
   flex-direction: column;  /* empilha imagem + texto verticalmente */
   align-items: center;     /* centraliza horizontalmente */
