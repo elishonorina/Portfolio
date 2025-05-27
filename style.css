@@ -3,6 +3,7 @@
 * {
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 
 html {
@@ -244,6 +245,19 @@ nav li a:hover::after {
 
 }
 
+.titulos_secoes {
+  margin: 60px 0px 60px 0px;
+  font-size: 20px;
+  max-width: 95%;
+  text-align: left;
+  align-items: flex-start;
+  text-decoration-line: underline;
+  text-decoration-thickness: 5px;
+  text-underline-offset: 15px;
+  text-decoration-color: #8773FB;
+}
+
+
 /*SEÇÃO SOBRE MIM*/
 #sobre_mim {
   height: 100vh;
@@ -251,19 +265,6 @@ nav li a:hover::after {
   width: 100%;
   padding: 0 40px;
   justify-content: flex-start; 
-}
-
-.titulos_secoes {
-  margin-top: 65px;
-  font-size: 20px;
-  margin-bottom: 50px;
-  max-width: 900px;
-  text-align: left;
-  align-items: flex-start;
-  text-decoration-line: underline;
-  text-decoration-thickness: 5px;
-  text-underline-offset: 15px;
-  text-decoration-color: #8773FB;
 }
 
 .caixas {
@@ -319,7 +320,6 @@ nav li a:hover::after {
   width: 100%;
   text-align: center;
   margin: 20px;
-  
 }
 
 .caixinhas_habilidade {
@@ -363,14 +363,79 @@ nav li a:hover::after {
   transition: transform 0.8s ease-out, opacity 0.6s ease-out;
 }
 
-/* Quando ativar, anima para posição normal */
 .caixa.ativo,
 .caixao.ativo {
   opacity: 1;
   transform: translateY(0);
 }
 
+/*SEÇÃO PROJETOS*/
+  #projetos {
+  min-height: 100vh;
+  padding: 0 40px;
+  width: 95%;
+  box-sizing: border-box;
+  }
 
+.caixas_projetos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 44px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.caixa_projetos {
+  height: auto;
+  width: 330px;
+  background-color: #201e369c;
+  border-radius: 10px;
+  text-align: left;
+  transition: transform 0.5s ease-in-out;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: transform 0.8s ease-out, opacity 0.6s ease-out;
+}
+
+.caixa_projetos.ativo {
+  opacity: 1;
+  transform: translateY(0);
+}
+  
+.caixa_projetos:hover{
+  transform: translateY(-10px);
+  background: linear-gradient(to bottom, #201e369c, #36335c9c);
+}
+
+.texto_projetos {
+  margin: auto;
+  text-align: left;
+  padding: 20px;
+}
+
+.texto_projetos h2{
+  font-size: 20px;
+  color: white;
+  padding-bottom: 10px;
+}
+
+.texto_projetos p {
+  font-size: 12px;
+  color: #ccc;
+}
+
+.texto_projetos h4 {
+  padding-top: 10px;
+  color: #8773FB;
+  font-size: 9px;
+}
+
+.caixa_projetos img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px 10px 0px 0px;
+}
 
 /*CELULARES*/
 @media (max-width: 599px){
