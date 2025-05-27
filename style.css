@@ -246,9 +246,8 @@ nav li a:hover::after {
 }
 
 .titulos_secoes {
-  margin-top: 65px;
+  margin: 60px 0px 60px 0px;
   font-size: 20px;
-  margin-bottom: 50px;
   max-width: 95%;
   text-align: left;
   align-items: flex-start;
@@ -363,52 +362,71 @@ nav li a:hover::after {
 
 /*SEÇÃO PROJETOS*/
   #projetos {
-  height: 100vh;
-  max-width: 95%;
-  justify-content: flex-start; 
-  padding: 0px 40px; 
+  min-height: 100vh;
+  padding: 0 40px;
+  width: 95%;
+  box-sizing: border-box;
   }
 
-  
-  .caixas_projetos {
+.caixas_projetos {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
-  box-sizing: border-box;
+  justify-content: flex-start;
+  gap: 44px;
   width: 100%;
-  padding: 0; /* ou algo controlado */
+  box-sizing: border-box;
 }
 
 .caixa_projetos {
-  width: 30%;
-  background: #201e369c;
+  height: auto;
+  width: 330px;
+  background-color: #201e369c;
   border-radius: 10px;
+  text-align: left;
+  transition: transform 0.5s ease-in-out;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: transform 0.8s ease-out, opacity 0.6s ease-out;
 }
 
-.caixa_projetos img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
+.caixa_projetos.ativo {
+  opacity: 1;
+  transform: translateY(0);
+}
   
+.caixa_projetos:hover{
+  transform: translateY(-10px);
+  background: linear-gradient(to bottom, #201e369c, #36335c9c);
 }
 
 .texto_projetos {
+  margin: auto;
   text-align: left;
   padding: 20px;
 }
 
-.caixa_projetos h1 {
+.texto_projetos h2{
+  font-size: 20px;
   color: white;
-  text-align: left;
-  font-size: 18px;
-  margin-bottom: 10px;
+  padding-bottom: 10px;
 }
 
-.caixa_projetos p {
+.texto_projetos p {
+  font-size: 12px;
   color: #ccc;
-  font-size: 14px;
 }
 
+.texto_projetos h4 {
+  padding-top: 10px;
+  color: #8773FB;
+  font-size: 9px;
+}
+
+.caixa_projetos img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px 10px 0px 0px;
+}
 
 /*CELULARES*/
 @media (max-width: 599px){
