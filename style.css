@@ -3,6 +3,7 @@
 * {
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 
 html {
@@ -244,6 +245,20 @@ nav li a:hover::after {
 
 }
 
+.titulos_secoes {
+  margin-top: 65px;
+  font-size: 20px;
+  margin-bottom: 50px;
+  max-width: 95%;
+  text-align: left;
+  align-items: flex-start;
+  text-decoration-line: underline;
+  text-decoration-thickness: 5px;
+  text-underline-offset: 15px;
+  text-decoration-color: #8773FB;
+}
+
+
 /*SEÇÃO SOBRE MIM*/
 #sobre_mim {
   height: 100vh;
@@ -251,19 +266,6 @@ nav li a:hover::after {
   width: 100%;
   padding: 0 40px;
   justify-content: flex-start; 
-}
-
-.titulos_secoes {
-  margin-top: 65px;
-  font-size: 20px;
-  margin-bottom: 50px;
-  max-width: 900px;
-  text-align: left;
-  align-items: flex-start;
-  text-decoration-line: underline;
-  text-decoration-thickness: 5px;
-  text-underline-offset: 15px;
-  text-decoration-color: #8773FB;
 }
 
 .caixas {
@@ -318,7 +320,6 @@ nav li a:hover::after {
   width: 100%;
   text-align: center;
   margin: 20px;
-  
 }
 
 .caixinhas_habilidade {
@@ -354,13 +355,59 @@ nav li a:hover::after {
   transition: transform 0.8s ease-out, opacity 0.6s ease-out;
 }
 
-/* Quando ativar, anima para posição normal */
 .caixa.ativo,
 .caixao.ativo {
   opacity: 1;
   transform: translateY(0);
 }
 
+/*SEÇÃO PROJETOS*/
+  #projetos {
+  height: 100vh;
+  max-width: 95%;
+  justify-content: flex-start; 
+  padding: 0px 40px; 
+  }
+
+  
+  .caixas_projetos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0; /* ou algo controlado */
+}
+
+.caixa_projetos {
+  width: 30%;
+  background: #201e369c;
+  border-radius: 10px;
+}
+
+.caixa_projetos img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  
+}
+
+.texto_projetos {
+  text-align: left;
+  padding: 20px;
+}
+
+.caixa_projetos h1 {
+  color: white;
+  text-align: left;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.caixa_projetos p {
+  color: #ccc;
+  font-size: 14px;
+}
 
 
 /*CELULARES*/
