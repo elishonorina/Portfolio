@@ -462,6 +462,8 @@ nav li a:hover::after {
   border-radius: 8px;
   width: 100%;
   max-width: 500px;
+  min-height: 400px;
+  height: auto;
 }
         
 .form-container h2 {
@@ -493,6 +495,7 @@ textarea {
   background-color: #8773FB;
   color: white;
   border: none;
+  margin-top: 30px;
   padding: 12px 20px;
   border-radius: 20px;
   cursor: pointer;
@@ -526,7 +529,7 @@ textarea {
 }
 
 .conteudo_contato p {
-  font-size: 18px;
+  font-size: 16px;
   max-width: 520px;
   text-align: left;
 }
@@ -536,7 +539,11 @@ textarea {
 }
 
 .contato_esquerda .imagem-icons-wrapper{
-  margin-top: 50px;
+  margin-top: 20px;
+}
+
+.maps {
+  margin-top: 30px;
 }
 
 /* Monitores grandes*/
