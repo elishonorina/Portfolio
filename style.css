@@ -445,6 +445,91 @@ nav li a:hover::after {
   border-radius: 10px 10px 0px 0px;
 }
 
+
+/*SEÇÃO CONTATO*/
+#contato {
+  margin-top: 200px;
+  max-width: 95%;
+  width: 100%;
+  padding: 0 40px;
+  justify-content: flex-start; 
+}
+
+.form-container {
+  margin-bottom: 100px;
+  background-color: #201e369c;
+  padding: 30px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 500px;
+}
+        
+h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+        
+.form-group {
+   margin-bottom: 20px;
+}
+        
+input[type="text"], input[type="email"], textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #201e369c;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box;
+  background-color: #585666b7;
+}
+        
+textarea {
+  height: 120px;
+  resize: vertical;
+}
+        
+.submit-btn {
+  background-color: #8773FB;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+  transition: background-color 0.3s;
+  }
+        
+.submit-btn:hover {
+  background-color: #6c59d8;
+}
+        
+.form-group:last-child {
+  margin-bottom: 0;
+}
+
+
+.conteudo_contato {
+  display: flex;
+  width: 95%;
+  gap: 80px;
+  align-items: center;
+  
+}
+
+.conteudo_contato p {
+  font-size: 18px;
+  max-width: 550px;
+  text-align: left;
+}
+.contato_esquerda{
+  margin-bottom: 100px;
+}
+.contato_esquerda .imagem-icons-wrapper{
+  margin-top: 50px;
+}
+
 /* Monitores grandes*/
 @media (min-width: 1440px) {
   .cabecalho {
