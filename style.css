@@ -515,7 +515,14 @@ textarea {
   gap: 80px;
   align-items: center;
   justify-content: center;
-  
+  opacity: 0;
+  transform: translateY(50px);
+  transition: transform 0.8s ease-out, opacity 0.6s ease-out;
+}
+
+.conteudo_contato.ativo {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .conteudo_contato p {
