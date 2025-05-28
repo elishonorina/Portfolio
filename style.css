@@ -22,10 +22,12 @@ main {
     flex-direction: column;
     align-items: center;
     margin: auto;
+    max-width: 1300px;
+    width: 100%; /* adicione isso */
+    padding: 0 20px; /* adiciona um pouco de respiro nas laterais */
 }
 
 section {
-  height: 100vh;
   box-sizing: border-box;
 }
 
@@ -167,8 +169,6 @@ nav li a:hover::after {
   transform: translateY(0);
 }
 
-
-  
 .container h1 {
   font-size: 40px;
   font-weight: 700;
@@ -187,7 +187,7 @@ nav li a:hover::after {
 
 .interacoes {
   display: flex;
-  gap: 20px;
+  gap: 25px;
 }
 
 #curriculo {
@@ -216,7 +216,7 @@ nav li a:hover::after {
   border-radius: 100px;
   font-size: 14px;
   padding: 10px;
-  width: 120px;
+  width: 150px;
   text-align: center;
   display: inline-block;
 }
@@ -246,9 +246,8 @@ nav li a:hover::after {
 }
 
 .titulos_secoes {
-  margin: 60px 0px 60px 0px;
+  margin: 120px 0px 60px 75px;
   font-size: 20px;
-  max-width: 95%;
   text-align: left;
   align-items: flex-start;
   text-decoration-line: underline;
@@ -260,10 +259,7 @@ nav li a:hover::after {
 
 /*SEÇÃO SOBRE MIM*/
 #sobre_mim {
-  height: 100vh;
-  max-width: 95%;
   width: 100%;
-  padding: 0 40px;
   justify-content: flex-start; 
 }
 
@@ -381,20 +377,19 @@ nav li a:hover::after {
 
 /*SEÇÃO PROJETOS*/
   #projetos {
-  min-height: 100vh;
-  padding: 0 40px;
-  width: 95%;
   box-sizing: border-box;
+  justify-content: center;
   }
 
 .caixas_projetos {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  gap: 44px;
-  width: 100%;
-  box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px 60px;
+    width: 100%;
+    box-sizing: border-box;
 }
+
 
 .caixa_projetos {
   height: auto;
@@ -447,18 +442,29 @@ nav li a:hover::after {
   border-radius: 10px 10px 0px 0px;
 }
 
-/*CELULARES*/
-@media (max-width: 599px){
-}
+/* Monitores grandes*/
+@media (min-width: 1440px) {
+  .cabecalho{
+    gap: 450px;
+  }
 
-/* TABLET RETRATO*/
-@media (min-width: 600px) and (max-width: 767px) {
+  .caixas_projetos {
+    gap: 40px 60px;
+  }
 }
 
 /* TABLET PAISAGEM/DESKTOP PEQUENO*/
 @media (min-width: 768px) and (max-width: 1024px) {
 }
 
-/* Monitores grandes*/
-@media (min-width: 1440px) {
+/* TABLET RETRATO*/
+@media (min-width: 600px) and (max-width: 767px) {
 }
+
+/*CELULARES*/
+@media (max-width: 599px){
+}
+
+
+
+
