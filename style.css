@@ -249,6 +249,7 @@ nav li a:hover::after {
 }
 
 .titulos_secoes {
+  max-width: 1300px;
   margin: 120px 0px 60px 75px;
   font-size: 20px;
   text-align: left;
@@ -306,11 +307,11 @@ nav li a:hover::after {
   max-width: 80%;
 }
 
-.texto_caixa h2{
+.texto_caixa h2 {
+  text-align: left;
   font-size: 20px;
   color: #8773FB;
-  padding: 20px 0px;
-  margin-top: 15px;
+  margin: 30px 0px 20px 0px;
 }
 
 .texto_caixa p {
@@ -333,12 +334,12 @@ nav li a:hover::after {
 .subtitulo {
   width: 100%;
   text-align: center;
-  margin-top: 30px;
-  margin-bottom: 10px;
+  margin: 30px 0px 20px 0px;
 }
 
 .subtitulo h2 {
-  font-weight: 500;
+  color: white;
+  font-weight: 700;
   font-size: 22px;
 }
 
@@ -422,10 +423,11 @@ nav li a:hover::after {
   padding: 20px;
 }
 
-.texto_projetos h2{
+.texto_projetos h2 {
+  margin-bottom: 10px;
   font-size: 20px;
   color: white;
-  padding-bottom: 10px;
+  text-align: left;
 }
 
 .texto_projetos p {
@@ -449,10 +451,8 @@ nav li a:hover::after {
 /*SEÇÃO CONTATO*/
 #contato {
   margin-top: 200px;
-  max-width: 95%;
+  max-width: 1300px;
   width: 100%;
-  padding: 0 40px;
-  justify-content: flex-start; 
 }
 
 .form-container {
@@ -464,7 +464,7 @@ nav li a:hover::after {
   max-width: 500px;
 }
         
-h2 {
+.form-container h2 {
   text-align: center;
   color: #333;
   margin-bottom: 20px;
@@ -512,20 +512,22 @@ textarea {
 
 .conteudo_contato {
   display: flex;
-  width: 95%;
   gap: 80px;
   align-items: center;
+  justify-content: center;
   
 }
 
 .conteudo_contato p {
   font-size: 18px;
-  max-width: 550px;
+  max-width: 520px;
   text-align: left;
 }
+
 .contato_esquerda{
   margin-bottom: 100px;
 }
+
 .contato_esquerda .imagem-icons-wrapper{
   margin-top: 50px;
 }
